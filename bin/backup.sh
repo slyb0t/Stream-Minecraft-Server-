@@ -16,7 +16,11 @@ MC_LOG="/var/log/minecraft"
 
 function setup_logging() {
   sudo mkdir -p "${MC_LOG}"
-  sudo chown -R betty:games "${MC_LOG}"
+
+  mkdir -p "${MC_HOME}/workspace" # betty owns this dir
+
+  sudo chown -R betty:games "${MC_LOG}" "${MC_HOME}/workspace" # change the perms
+
   if [ ! -e "${MC_HOME}/logs" ]; then
     log_info "creating link to logs folder"
     ln -s "${MC_LOG}" "${MC_HOME}/logs"
@@ -37,8 +41,26 @@ function setup_backup() {
   fi
 }
 
-function perform_function(){
-    sudo cp -Rp "${MC_HOME}" "${BACKUP_DIR}"
+function manage_region_files() {
+  if [ ! -d "${MC_HOME}/workspace/Minecraft-Region-Fixer" ]; then
+    log_info "Install Region Fixer"
+    git clone https://github.com/Fenixin/Minecraft-Region-Fixer.git "${MC_HOME}/workspace/Minecraft-Region-Fixer"
+  fi
+
+  log_info "Validate the region files"
+  python3 "${MC_HOME}/workspace/Minecraft-Region-Fixer/regionfixer.py" "${MC_HOME}/world"
+
+  # resotre the bad ones from backups
+  # python3 regionfixer.py -p 4 --replace-wrong --backups
+
+}
+
+function fix_permissions() {
+  chmod 664 "${MC_HOME}/world/poi/*"
+}
+
+function perform_function() {
+  sudo cp -Rp "${MC_HOME}" "${BACKUP_DIR}"
 }
 
 function main() {
@@ -54,6 +76,8 @@ function main() {
   # setup_java
   setup_backup
   install_debian
+  manage_region_files
+  perform_function
 
 }
 

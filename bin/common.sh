@@ -19,21 +19,21 @@ set -o pipefail
 
 # --- Color and Logging Functions ---
 # Using tput for compatibility and to check if the terminal supports color.
-if tput setaf 1 &> /dev/null; then
-    RED=$(tput setaf 1)
-    GREEN=$(tput setaf 2)
-    YELLOW=$(tput setaf 3)
-    CYAN=$(tput setaf 6)
-    LPURP='\033[1;35m'
-    BOLD=$(tput bold)
-    NC=$(tput sgr0) # No Color
+if tput setaf 1 &>/dev/null; then
+  RED=$(tput setaf 1)
+  GREEN=$(tput setaf 2)
+  YELLOW=$(tput setaf 3)
+  CYAN=$(tput setaf 6)
+  LPURP='\033[1;35m'
+  BOLD=$(tput bold)
+  NC=$(tput sgr0) # No Color
 else
-    RED=""
-    GREEN=""
-    YELLOW=""
-    CYAN=""
-    BOLD=""
-    NC=""
+  RED=""
+  GREEN=""
+  YELLOW=""
+  CYAN=""
+  BOLD=""
+  NC=""
 fi
 
 # Centralized logging functions for consistent output.
@@ -99,7 +99,6 @@ function setup_golang() {
   if [ ! -f "${HOME}/go/bin/errcheck" ]; then go install github.com/kisielk/errcheck@latest; fi
   if [ ! -f "${HOME}/franklin/go/bin/golangci-lint" ]; then go install github.com/kisielk/errcheck@latest; fi
 }
-
 
 PRIV_CMD="sudo"
 function install_debian() {
