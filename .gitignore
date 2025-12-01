@@ -1,0 +1,16 @@
+.bash_history
+.bash_logout
+.bashrc
+.cache
+.cloud-locale-test.skip
+.lesshst
+.wget-hsts
+.git
+.ssh
+.profile
+.selected_editor
+.viminfo
+cache/
+crash-reports/
+libraries/
+logs/
