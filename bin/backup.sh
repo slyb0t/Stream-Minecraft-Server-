@@ -1,84 +1,74 @@
 #!/usr/bin/env bash
 #
-# SPDX-FileCopyrightText: ©2021-2025 franklin <smoooth.y62wj@passmail.net>
+# SPDX-FileCopyrightText: © 2025 franklin 
 #
 # SPDX-License-Identifier: MIT
 
 # ChangeLog:
 #
-# v 0.1 11/10/25 franklin - initial version
+# v 0.1 11/30/25 franklin - initial version
 
-BACKUP_DIR="/opt/backup"
+
 DEB_PKG=(git gnupg)
 LRED='\033[1;31m'
-MC_HOME="/opt/mcserver"
+NC='\033[0m' # No Color
+MC_HOME="/home/betty"
 MC_LOG="/var/log/minecraft"
+ME_SU=false
+BACKUP_DIR="/${MC_HOME}/backups"
 
-function setup_logging() {
-  sudo mkdir -p "${MC_LOG}"
-
-  mkdir -p "${MC_HOME}/workspace" # betty owns this dir
-
-  sudo chown -R betty:games "${MC_LOG}" "${MC_HOME}/workspace" # change the perms
-
-  if [ ! -e "${MC_HOME}/logs" ]; then
-    log_info "creating link to logs folder"
-    ln -s "${MC_LOG}" "${MC_HOME}/logs"
-  fi
-}
-
-function setup_java() {
-  log_header "Setup java JDK"
-  sudo apt install -y default-jdk
-}
-
-function setup_backup() {
-  git config --global --add safe.directory "${MC_HOME}"
-  localectl set-locale LANG=en_US.UTF-8
-  if [ ! -d "${BACKUP_DIR}" ]; then
-    log_info "Creating backup dir: ${BACKUP_DIR}"
-    sudo mkdir "${BACKUP_DIR}"
-  fi
-}
-
-function manage_region_files() {
-  if [ ! -d "${MC_HOME}/workspace/Minecraft-Region-Fixer" ]; then
-    log_info "Install Region Fixer"
-    git clone https://github.com/Fenixin/Minecraft-Region-Fixer.git "${MC_HOME}/workspace/Minecraft-Region-Fixer"
-  fi
-
-  log_info "Validate the region files"
-  python3 "${MC_HOME}/workspace/Minecraft-Region-Fixer/regionfixer.py" "${MC_HOME}/world"
-
-  # resotre the bad ones from backups
-  # python3 regionfixer.py -p 4 --replace-wrong --backups
-
-}
-
-function fix_permissions() {
-  chmod 664 "${MC_HOME}/world/poi/*"
-}
-
-function perform_function() {
-  sudo cp -Rp "${MC_HOME}" "${BACKUP_DIR}"
-}
-
-function main() {
-  if [ -f "${MC_HOME}/bin/common.sh" ]; then
+# Source common functions
+if [ -f "${MC_HOME}/bin/common.sh" ]; then
     source "${MC_HOME}/bin/common.sh"
-  else
-    echo -e "${LRED}can not find common.sh.${NC}"
+else
+    echo -e "${LRED}Cannot find common.sh.${NC}"
     exit 1
-  fi
-  log_info "successfully sourced common.sh" && echo -e "\n"
+fi
+log_info "Successfully sourced common.sh"
 
-  setup_logging
-  # setup_java
-  setup_backup
-  install_debian
-  manage_region_files
-  perform_function
+# Check for sudo capabilities
+if sudo -v &> /dev/null; then
+    log_info "Sudo is allowed"
+    ME_SU=true
+else
+    log_warn "Sudo is not allowed"
+fi
 
-}
+# Backup naming
+today=$(date +"%Y-%m-%d")
+BD="${BACKUP_DIR}/$(date +%A)"
+BF="betty-mc-${today}.tar"
 
-main "$@"
+log_header "Starting backup from ${MC_HOME} to ${BD}"
+
+# Create backup directory if it doesn't exist
+if [ ! -d "${BD}" ]; then 
+    log_info "Creating backup directory: ${BD}"
+    mkdir -p "${BD}"
+else
+    log_info "Backup directory already exists: ${BD}"
+fi
+
+# Generate backup file
+log_info "Generating backup file: ${BD}/${BF}"
+MYTMPDIR="$(mktemp -d)"
+pushd "${MYTMPDIR}" || { log_error "Failed to change to temp dir"; exit 1; }
+log_info "Using temporary workdir: ${PWD}"
+
+#cp -r "${MC_HOME}/world" "${MC_HOME}/world_nether" "${MC_HOME}/world_the_end" "${MYTMPDIR}/"
+tar -cf "${MYTMPDIR}/${BF}" "${MC_HOME}/world" "${MC_HOME}/world_nether" "${MC_HOME}/world_the_end"
+
+log_info "Compressing backup..."
+xz -z "${MYTMPDIR}/${BF}"
+
+log_info "Saving the compressed file to the backup directory"
+mv "/${MYTMPDIR}/${BF}.xz" "${BD}"
+
+log_info "Backup completed successfully."
+popd
+
+log_info "Cleaing up..."
+rm -rf "/tmp/tmp.*"
+
+# can i message the console
+# screen -S minecraft -p 0 -X stuff "`printf "say This is a test.\r"`";
