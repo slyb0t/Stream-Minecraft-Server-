@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# SPDX-FileCopyrightText: © 2025 franklin 
+# SPDX-FileCopyrightText: © 2025 franklin  <smoooth.y62wj@passmail.net>
 #
 # SPDX-License-Identifier: MIT
 
@@ -55,14 +55,14 @@ MYTMPDIR="$(mktemp -d)"
 pushd "${MYTMPDIR}" || { log_error "Failed to change to temp dir"; exit 1; }
 log_info "Using temporary workdir: ${PWD}"
 
-#cp -r "${MC_HOME}/world" "${MC_HOME}/world_nether" "${MC_HOME}/world_the_end" "${MYTMPDIR}/"
-tar -cf "${MYTMPDIR}/${BF}" "${MC_HOME}/world" "${MC_HOME}/world_nether" "${MC_HOME}/world_the_end"
+cp -r "${MC_HOME}/world" "${MC_HOME}/world_nether" "${MC_HOME}/world_the_end" "${MYTMPDIR}/"
+tar -cf "${MYTMPDIR}/${BF}" -C "${MYTMPDIR}" /tmp # Create the tar archive in the temporary directory
 
 log_info "Compressing backup..."
-xz -z "${MYTMPDIR}/${BF}"
+xz -z "/tmp/${BF}"
 
 log_info "Saving the compressed file to the backup directory"
-mv "/${MYTMPDIR}/${BF}.xz" "${BD}"
+mv "/tmp/${BF}.xz" "${BD}"
 
 log_info "Backup completed successfully."
 popd

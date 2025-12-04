@@ -9,7 +9,7 @@
 # v 0.1 11/10/25 franklin - initial version
 
 LRED='\033[1;31m'
-MC_HOME="/opt/mcserver"
+MC_HOME="/home/betty"
 MC_LOG="/var/log/minecraft"
 
 function determine_host() {
@@ -23,6 +23,19 @@ function determine_host() {
 function determine_java() {
   log_header "review java install"
   java --version
+  
+  if [ -z "${JAVA_HOME}" ];then
+    log_info "Java Home: ${JAVA_HOME}"
+  else
+    log_info "Java Home is not set. Please fix."
+  fi
+  # which java
+  log_info "scope out the jvm files"
+  find /usr/lib/jvm/ -name "java*"
+}
+
+function determine_logging(){
+  pass
 }
 
 function review_server() {
@@ -42,14 +55,18 @@ function review_server() {
 }
 
 function main() {
-  if [ -f "./bin/common.sh" ]; then
-    source "./bin/common.sh"
+  if [ -f "./common.sh" ]; then
+    source "./common.sh"
   else
     echo -e "${LRED}can not find common.sh.${NC}"
     exit 1
   fi
   log_info "successfully sourced common.sh" && echo -e "\n"
 
+
+  sudo -v &> /dev/null && log_info "sudo is allowed" || log_warn "sudo is not allowed"
+
+  determine_java
 }
 
 main "$@"
