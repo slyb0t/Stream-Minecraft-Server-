@@ -1316,6 +1316,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:skeleton": "2025-11-12 01:55:39 +0000",
+      "minecraft:spider": "2025-12-01 02:05:36 +0000",
       "minecraft:zombie": "2025-11-11 23:45:58 +0000"
     },
     "done": false
@@ -1831,6 +1832,18 @@
   "minecraft:recipes/misc/writable_book": {
     "criteria": {
       "has_book": "2025-11-25 20:26:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2025-12-01 02:06:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pink_dye_from_peony": {
+    "criteria": {
+      "has_peony": "2025-12-01 02:12:58 +0000"
     },
     "done": true
   },
