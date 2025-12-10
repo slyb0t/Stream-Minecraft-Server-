@@ -15,7 +15,7 @@ NC='\033[0m' # No Color
 MC_HOME="/home/betty"
 MC_LOG="/var/log/minecraft"
 ME_SU=false
-BACKUP_DIR="/${MC_HOME}/backups"
+BACKUP_DIR="${MC_HOME}/backups"
 
 # Source common functions
 if [ -f "${MC_HOME}/bin/common.sh" ]; then
@@ -39,30 +39,39 @@ today=$(date +"%Y-%m-%d")
 BD="${BACKUP_DIR}/$(date +%A)"
 BF="betty-mc-${today}.tar"
 
-log_header "Starting backup from ${MC_HOME} to ${BD}"
-
-# Create backup directory if it doesn't exist
-if [ ! -d "${BD}" ]; then 
-    log_info "Creating backup directory: ${BD}"
-    mkdir -p "${BD}"
+if [ -f "${BACKUP_DIR}/$(date +%A)/${BF}.xz" ]; then
+  log_error "a backup for today already exists. delete it if you are really serious and I will make a new one!"
+  exit 1
 else
-    log_info "Backup directory already exists: ${BD}"
+  log_header "Starting backup from ${MC_HOME} to ${BD}"
 fi
 
-# Generate backup file
+#if [ -d "/opt/mcserver" ]; then
+  # log_info "copy in files from /opt/mcserver"
+  # log_warn "You should run the minecraft server from ${MC_HOME}!!"
+#  cd /opt/mcserver/ && cp -Rp world/ world_nether/ world_the_end/ /home/betty
+#fi
+
+if [ ! -d "${BD}" ]; then 
+    log_warn "Creating backup directory: ${BD}"
+    mkdir -p "${BD}"
+else
+    log_success "Backup directory already exists: ${BD}"
+fi
+
 log_info "Generating backup file: ${BD}/${BF}"
 MYTMPDIR="$(mktemp -d)"
 pushd "${MYTMPDIR}" || { log_error "Failed to change to temp dir"; exit 1; }
 log_info "Using temporary workdir: ${PWD}"
 
-#cp -r "${MC_HOME}/world" "${MC_HOME}/world_nether" "${MC_HOME}/world_the_end" "${MYTMPDIR}/"
 tar -cf "${MYTMPDIR}/${BF}" "${MC_HOME}/world" "${MC_HOME}/world_nether" "${MC_HOME}/world_the_end"
 
 log_info "Compressing backup..."
 xz -z "${MYTMPDIR}/${BF}"
 
 log_info "Saving the compressed file to the backup directory"
-mv "/${MYTMPDIR}/${BF}.xz" "${BD}"
+mv "${MYTMPDIR}/${BF}.xz" "${BD}"
+rm -rf "${MYTMPDIR}"
 
 log_info "Backup completed successfully."
 popd
