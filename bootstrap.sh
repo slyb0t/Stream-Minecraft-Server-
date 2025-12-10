@@ -26,7 +26,6 @@ function setup_java() {
   sudo apt install -y default-jdk
 }
 
-
 function setup_logging() {
   
   sudo mkdir -p /var/log/minecraft
@@ -34,22 +33,20 @@ function setup_logging() {
   if [ ! -e "${MC_HOME}/logs" ]; then
   ln -s /var/log/minecraft "${MC_HOME}/logs"
   fi
-  
-  
 }
 
 function setup_tls() {
   log_header "setup TLS"
-    sudo apt-get install -y certbot
+  sudo apt-get install -y certbot
 }
 
 function setup_unmined() {
-    # install unmined fotr mapping
+  # install unmined fotr mapping
   log_header "setup unmined"
-   pass
+  pass
 }
 
-function setup_nginx(){
+function setup_nginx() {
   log_header "Setup nginx"
   sudo mkdir -p /var/www/html/map
   sudo chown -R betty:betty /var/www/html
@@ -71,9 +68,7 @@ function main() {
   create_folders
   setup_logging
   setup_nginx
-  
-timedatectl set-timezone America/Denver
+  timedatectl set-timezone America/Denver
 }
 
 main "$@"
-
