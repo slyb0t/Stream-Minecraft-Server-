@@ -79,7 +79,7 @@ function main() {
   fi
   log_info "successfully sourced common.sh" && echo -e "\n"
 
-  if sudo -v &> /dev/null ;then
+  if sudo -v &>/dev/null; then
     log_info "sudo is allowed"
     ME_SU=true
   else
