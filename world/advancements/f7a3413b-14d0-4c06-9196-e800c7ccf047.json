@@ -1421,6 +1421,7 @@
     "criteria": {
       "apple": "2025-11-23 20:40:44 -0700",
       "bread": "2025-11-12 19:17:18 -0700",
+      "sweet_berries": "2025-12-09 21:01:24 -0700",
       "cooked_beef": "2025-12-04 18:37:11 -0700",
       "melon_slice": "2025-11-11 18:55:57 -0700",
       "beetroot": "2025-11-11 18:59:31 -0700",
@@ -1848,15 +1849,21 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/stone_bricks": {
-    "criteria": {
-      "has_stone": "2025-12-08 18:42:18 -0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/bowl": {
     "criteria": {
       "has_the_recipe": "2025-12-08 18:20:45 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/mushroom_stew": {
+    "criteria": {
+      "has_bowl": "2025-12-08 18:20:46 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks": {
+    "criteria": {
+      "has_stone": "2025-12-08 18:42:18 -0700"
     },
     "done": true
   },
@@ -1932,17 +1939,65 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/mushroom_stew": {
-    "criteria": {
-      "has_bowl": "2025-12-08 18:20:46 -0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/stone_stairs": {
     "criteria": {
       "has_stone": "2025-12-08 18:42:18 -0700"
     },
     "done": true
   },
-  "DataVersion": 4556
+  "minecraft:recipes/combat/stone_spear": {
+    "criteria": {
+      "has_cobblestone": "2025-12-09 19:19:01 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/copper_spear": {
+    "criteria": {
+      "has_copper_ingot": "2025-12-09 19:19:01 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blast_furnace": {
+    "criteria": {
+      "has_smooth_stone": "2025-12-09 19:25:03 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone_slab": {
+    "criteria": {
+      "has_smooth_stone": "2025-12-09 19:25:03 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone_slab_from_smooth_stone_stonecutting": {
+    "criteria": {
+      "has_smooth_stone": "2025-12-09 19:25:03 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_spear": {
+    "criteria": {
+      "has_stick": "2025-12-09 19:44:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_spear": {
+    "criteria": {
+      "has_iron_ingot": "2025-12-09 19:52:46 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye": {
+    "criteria": {
+      "has_bone_meal": "2025-12-09 20:52:34 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bone_block": {
+    "criteria": {
+      "has_bone_meal": "2025-12-09 20:52:34 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 4671
 }
