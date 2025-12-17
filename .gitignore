@@ -1,3 +1,5 @@
+*.jar
+*.tmp
 .bash_history
 .bash_logout
 .bashrc
@@ -10,7 +12,11 @@
 .profile
 .selected_editor
 .viminfo
+backups/
 cache/
 crash-reports/
 libraries/
 logs/
+test/
+versions/
+server.jar

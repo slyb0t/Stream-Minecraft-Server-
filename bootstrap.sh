@@ -27,15 +27,12 @@ function setup_java() {
 }
 
 function setup_logging() {
-
+  
   sudo mkdir -p /var/log/minecraft
   sudo chown -R betty:betty /var/log/minecraft
-  if [ ! -e "${MC_HOME}/server_minecraft/logs" ]; then
-    ln -s /var/log/minecraft "${MC_HOME}/server_minecraft/logs"
+  if [ ! -e "${MC_HOME}/logs" ]; then
+  ln -s /var/log/minecraft "${MC_HOME}/logs"
   fi
-  /var/log/minecraft/server_minecraft
-  server_minecraft/crash-reports
-  /var/log/minecraft/server_minecraft
 }
 
 function setup_tls() {
@@ -71,7 +68,7 @@ function main() {
   create_folders
   setup_logging
   setup_nginx
-
+  timedatectl set-timezone America/Denver
 }
 
 main "$@"

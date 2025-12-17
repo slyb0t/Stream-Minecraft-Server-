@@ -64,7 +64,6 @@ function main() {
   log_info "successfully sourced common.sh" && echo -e "\n"
 
   sudo -v &>/dev/null && log_info "sudo is allowed" || log_warn "sudo is not allowed"
-
   determine_java
 }
 

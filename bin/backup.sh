@@ -36,6 +36,7 @@ ME_SU=false
 DEB_PKG=(tar xz)
 
 check_dependencies() {
+  log_header "Check Dependencies"
   for cmd in "${REQUIRED_CMDS[@]}"; do
     if ! command -v "$cmd" &>/dev/null; then
       log_error "Required command '$cmd' is not installed or not in PATH."
@@ -45,6 +46,7 @@ check_dependencies() {
   log_info "All required commands are available."
 }
 
+function main() {
 if [ -f "${MC_HOME}/bin/common.sh" ]; then
   source "${MC_HOME}/bin/common.sh"
 else
@@ -103,3 +105,7 @@ log_header "Backup script finished."
 
 # Optional: You might consider adding a cleanup step here to remove archives older than X days/weeks
 # in the destination directory to prevent the backup directory from filling up completely.
+#
+}
+
+main "$@"
