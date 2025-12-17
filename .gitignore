@@ -1,3 +1,5 @@
+*.jar
+*.tmp
 .bash_history
 .bash_logout
 .bashrc
@@ -17,3 +19,4 @@ libraries/
 logs/
 test/
 versions/
+server.jar

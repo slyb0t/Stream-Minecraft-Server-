@@ -1,0 +1,30 @@
+# Here you can configure this plugin!
+
+Prefix: <gradient:gold:yellow>&lSimpleBroadcast &r&7»
+# ----------------------------------------------
+#  
+# message: the message of the Broadcast
+# delay: The cooldown of the Broadcast (in seconds)
+# sound: The sound, that should be played to every player, when the Broadcast appeared!
+# actionbar: The actionbar, that should be shown to every player, when the Broadcast appeared!
+# title: The title, that should be shown to every player, when the Broadcast appeared!
+#  
+# IMPORTANT: Do NOT remove any of the values, or else it wont work!
+# ----------------------------------------------
+Broadcasts:
+  Example:
+    message:
+    - ' '
+    - '&bwatch live at www.twitch.tv/s1yb0rg'
+    - ' '
+    delay: 10000
+    sound:
+      enabled: false
+      sound: ENTITY_PLAYER_LEVELUP
+    actionbar:
+      enabled: true
+      message: '&6&lLook in the chat!'
+    title:
+      enabled: true
+      message: '&6&lA wld Betty appeared!'
+      subTitle: '&7Thats  cool '

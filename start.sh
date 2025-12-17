@@ -1,0 +1,1 @@
+/home/betty/bin/start.sh

@@ -6,10 +6,7 @@
 
 # ChangeLog:
 #
-<<<<<<< HEAD
-=======
 # v 0.1 11/10/25 franklin - initial version
->>>>>>> origin/main
 
 # --- Script Configuration ---
 # Exit immediately if a command exits with a non-zero status.
@@ -22,23 +19,6 @@ set -o pipefail
 
 # --- Color and Logging Functions ---
 # Using tput for compatibility and to check if the terminal supports color.
-<<<<<<< HEAD
-if tput setaf 1 &> /dev/null; then
-    RED=$(tput setaf 1)
-    GREEN=$(tput setaf 2)
-    YELLOW=$(tput setaf 3)
-    CYAN=$(tput setaf 6)
-    LPURP='\033[1;35m'
-    BOLD=$(tput bold)
-    NC=$(tput sgr0) # No Color
-else
-    RED=""
-    GREEN=""
-    YELLOW=""
-    CYAN=""
-    BOLD=""
-    NC=""
-=======
 if tput setaf 1 &>/dev/null; then
   RED=$(tput setaf 1)
   GREEN=$(tput setaf 2)
@@ -54,7 +34,6 @@ else
   CYAN=""
   BOLD=""
   NC=""
->>>>>>> origin/main
 fi
 
 # Centralized logging functions for consistent output.
@@ -121,10 +100,6 @@ function setup_golang() {
   if [ ! -f "${HOME}/franklin/go/bin/golangci-lint" ]; then go install github.com/kisielk/errcheck@latest; fi
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
 PRIV_CMD="sudo"
 function install_debian() {
   # Container package installs will fail unless you do an initial update, the upgrade is optional

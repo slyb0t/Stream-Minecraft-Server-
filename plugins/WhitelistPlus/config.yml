@@ -1,0 +1,7 @@
+whitelist-status: true
+await-message: "&eYou are not yet whitelisted. A request has been sent."
+deny-message: "&cYou have been denied from the whitelist. Try again later."
+notify-all-whitelisted: false
+location-api:
+  url: "http://ip-api.com/json/%s"
+  timeout: 5000
