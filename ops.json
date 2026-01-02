@@ -1,8 +1,14 @@
 [
   {
+	  "uuid":"f7a3413b-14d0-4c06-9196-e800c7ccf047",
+	  "name":"theDevilsVoice",
+   "level": 4,
+   "bypassesPlayerLimit": true
+  },
+  {
     "uuid": "7b9fd287-b299-49c7-9040-84cc7b3e0c2e",
     "name": "slyborg4realz",
     "level": 4,
-    "bypassesPlayerLimit": false
+    "bypassesPlayerLimit": true
   }
 ]

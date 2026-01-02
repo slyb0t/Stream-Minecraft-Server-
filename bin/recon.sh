@@ -23,8 +23,8 @@ function determine_host() {
 function determine_java() {
   log_header "review java install"
   java --version
-  
-  if [ -z "${JAVA_HOME}" ];then
+
+  if [ -z "${JAVA_HOME}" ]; then
     log_info "Java Home: ${JAVA_HOME}"
   else
     log_info "Java Home is not set. Please fix."
@@ -34,7 +34,7 @@ function determine_java() {
   find /usr/lib/jvm/ -name "java*"
 }
 
-function determine_logging(){
+function determine_logging() {
   pass
 }
 
@@ -63,9 +63,7 @@ function main() {
   fi
   log_info "successfully sourced common.sh" && echo -e "\n"
 
-
-  sudo -v &> /dev/null && log_info "sudo is allowed" || log_warn "sudo is not allowed"
-
+  sudo -v &>/dev/null && log_info "sudo is allowed" || log_warn "sudo is not allowed"
   determine_java
 }
 
