@@ -1,0 +1,187 @@
+chests:
+- createdAt: 1767290363678
+  protected: false
+  location:
+    ==: org.bukkit.Location
+    world: world
+    x: 681.0
+    y: 64.0
+    z: 7884.0
+    pitch: 0.0
+    yaw: 0.0
+  expireAt: -1
+  items:
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_sword
+    count: 1
+    components:
+      minecraft:damage: '21'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_sword
+    count: 1
+    components:
+      minecraft:damage: '19'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_shovel
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_axe
+    count: 1
+    components:
+      minecraft:damage: '44'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_shovel
+    count: 1
+    components:
+      minecraft:damage: '37'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:shears
+    count: 1
+    components:
+      minecraft:damage: '30'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:white_wool
+    count: 7
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:melon_slice
+    count: 41
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_torch
+    count: 29
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:iron_nautilus_armor
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:composter
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:grindstone
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:blue_bed
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:orange_bed
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:raw_copper
+    count: 21
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:spyglass
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:blue_orchid
+    count: 17
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:bundle
+    count: 1
+    components:
+      minecraft:bundle_contents: '[{count:2,id:"minecraft:sandstone"},{count:7,id:"minecraft:obsidian"},{count:13,id:"minecraft:kelp"},{count:4,id:"minecraft:dead_bush"},{count:3,id:"minecraft:pumpkin_seeds"},{count:1,id:"minecraft:short_dry_grass"},{count:5,id:"minecraft:tall_dry_grass"},{count:15,id:"minecraft:cactus"},{count:6,id:"minecraft:cactus_flower"},{count:8,id:"minecraft:copper_ingot"}]'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:sandstone
+    count: 64
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:compass
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:dark_oak_planks
+    count: 51
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:stick
+    count: 5
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:bread
+    count: 4
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:emerald
+    count: 4
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:paper
+    count: 9
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_axe
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:lily_pad
+    count: 9
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:ladder
+    count: 19
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:iron_boots
+    count: 1
+    components:
+      minecraft:damage: '22'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_chestplate
+    count: 1
+    components:
+      minecraft:damage: '55'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_helmet
+    count: 1
+    components:
+      minecraft:damage: '55'
+    schema_version: 1
+  player: f7a3413b-14d0-4c06-9196-e800c7ccf047
