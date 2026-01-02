@@ -21,14 +21,17 @@ MC_LOG="/var/log/minecraft" # Log directory for the server
 BACKUP_DIR="${MC_HOME}/backups"
 MC_WORLD_DIR="${MC_HOME}" # The directory containing 'world', 'world_nether', 'world_the_end'
 
-# Files/Directories to include in the backup
+# Collect existing files into an array
 BACKUP_TARGETS=(
   "${MC_WORLD_DIR}/world"
   "${MC_WORLD_DIR}/world_nether"
   "${MC_WORLD_DIR}/world_the_end"
-  "${MC_WORLD_DIR}/*.yml"
-  "${MC_WORLD_DIR}/*.json"
 )
+
+# Append .yml and .json files if they exist
+shopt -s nullglob # Ensure the array remains empty if no files match
+BACKUP_TARGETS+=( "${MC_WORLD_DIR}"/*.yml "${MC_WORLD_DIR}"/*.json )
+shopt -u nullglob # Disable the nullglob option
 
 LRED='\033[1;31m'
 NC='\033[0m' # No Color
@@ -83,23 +86,16 @@ else
   log_info "Backup directory already exists: ${DEST_DIR}"  >> "${MC_LOG}/backup.log"
 fi
 
-# Generate and compress the backup file directly
-log_info "Creating compressed backup file: ${DEST_PATH}"  >> "${MC_LOG}/backup.log"
 
-# tar -Jcf:
-# -J: Use xz compression (equivalent to --xz)
-# -c: Create an archive
-# -f: Specify the archive filename
-# The following command creates the compressed archive directly,
-# avoiding intermediate files and reducing I/O operations.
+# Generate and compress the backup file directly
+log_info "Creating compressed backup file: ${DEST_PATH}" >> "${MC_LOG}/backup.log"
+
 if tar -Jcf "${DEST_PATH}" "${BACKUP_TARGETS[@]}"; then
   log_info "Backup completed successfully: ${DEST_PATH}" >> "${MC_LOG}/backup.log"
 else
   log_error "tar failed to create the backup archive." >> "${MC_LOG}/backup.log"
   exit 1
 fi
-
-log_info "Cleanup: Backup does not require temporary files with tar -Jcf." >> "${MC_LOG}/backup.log"
 
 log_header "Backup script finished." >> "${MC_LOG}/backup.log"
 
