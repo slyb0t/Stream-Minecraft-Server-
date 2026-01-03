@@ -21,14 +21,16 @@ MC_LOG="/var/log/minecraft" # Log directory for the server
 BACKUP_DIR="${MC_HOME}/backups"
 MC_WORLD_DIR="${MC_HOME}" # The directory containing 'world', 'world_nether', 'world_the_end'
 
-# Files/Directories to include in the backup
 BACKUP_TARGETS=(
   "${MC_WORLD_DIR}/world"
   "${MC_WORLD_DIR}/world_nether"
   "${MC_WORLD_DIR}/world_the_end"
-  "${MC_WORLD_DIR}/*.yml"
-  "${MC_WORLD_DIR}/*.json"
 )
+
+# Append .yml and .json files if they exist
+shopt -s nullglob # Ensure the array remains empty if no files match
+BACKUP_TARGETS+=( "${MC_WORLD_DIR}"/*.yml "${MC_WORLD_DIR}"/*.json )
+shopt -u nullglob # Disable the nullglob option
 
 LRED='\033[1;31m'
 NC='\033[0m' # No Color
@@ -36,14 +38,14 @@ ME_SU=false
 DEB_PKG=(tar xz)
 
 check_dependencies() {
-  log_header "Check Dependencies"
+  log_header "Check Dependencies" >> "${MC_LOG}/backup.log"
   for cmd in "${REQUIRED_CMDS[@]}"; do
     if ! command -v "$cmd" &>/dev/null; then
-      log_error "Required command '$cmd' is not installed or not in PATH."
+      log_error "Required command '$cmd' is not installed or not in PATH."  >> "${MC_LOG}/backup.log"
       exit 1
     fi
   done
-  log_info "All required commands are available."
+  log_info "All required commands are available."  >> "${MC_LOG}/backup.log"
 }
 
 function main() {
@@ -51,19 +53,19 @@ if [ -f "${MC_HOME}/bin/common.sh" ]; then
   source "${MC_HOME}/bin/common.sh"
 else
   # Simple echo if the logging function source fails
-  echo -e "${LRED}Cannot find common.sh. Exiting.${NC}"
+  echo -e "${LRED}Cannot find common.sh. Exiting.${NC}"  >> "${MC_LOG}/backup.log"
   exit 1
 fi
-log_info "Successfully sourced common.sh"
+log_info "Successfully sourced common.sh" >> "${MC_LOG}/backup.log"
 
 check_dependencies
 
 # Check for sudo capabilities (retained logic)
 if sudo -v &>/dev/null; then
-  log_info "Sudo is allowed"
+  log_info "Sudo is allowed"  >> "${MC_LOG}/backup.log"
   ME_SU=true
 else
-  log_warn "Sudo is not allowed"
+  log_warn "Sudo is not allowed" >> "${MC_LOG}/backup.log"
 fi
 
 # Define the destination directory (daily rotation) and filename
@@ -72,36 +74,29 @@ DEST_DIR="${BACKUP_DIR}/$(date +%A)"
 BACKUP_FILENAME="${MC_USER}-mc-${TODAY}.tar.xz"
 DEST_PATH="${DEST_DIR}/${BACKUP_FILENAME}"
 
-log_header "Starting backup for '${MC_USER}' worlds to ${DEST_DIR}"
+log_header "Starting backup for '${MC_USER}' worlds to ${DEST_DIR}"  >> "${MC_LOG}/backup.log"
 
 # Create backup directory if it doesn't exist
 if [ ! -d "${DEST_DIR}" ]; then
-  log_info "Creating backup directory: ${DEST_DIR}"
+  log_info "Creating backup directory: ${DEST_DIR}" >> "${MC_LOG}/backup.log"
   # Use -p to avoid error if parent directories don't exist
   mkdir -p "${DEST_DIR}"
 else
-  log_info "Backup directory already exists: ${DEST_DIR}"
+  log_info "Backup directory already exists: ${DEST_DIR}"  >> "${MC_LOG}/backup.log"
 fi
 
-# Generate and compress the backup file directly
-log_info "Creating compressed backup file: ${DEST_PATH}"
 
-# tar -Jcf:
-# -J: Use xz compression (equivalent to --xz)
-# -c: Create an archive
-# -f: Specify the archive filename
-# The following command creates the compressed archive directly,
-# avoiding intermediate files and reducing I/O operations.
+# Generate and compress the backup file directly
+log_info "Creating compressed backup file: ${DEST_PATH}" >> "${MC_LOG}/backup.log"
+
 if tar -Jcf "${DEST_PATH}" "${BACKUP_TARGETS[@]}"; then
-  log_info "Backup completed successfully: ${DEST_PATH}"
+  log_info "Backup completed successfully: ${DEST_PATH}" >> "${MC_LOG}/backup.log"
 else
-  log_error "tar failed to create the backup archive."
+  log_error "tar failed to create the backup archive." >> "${MC_LOG}/backup.log"
   exit 1
 fi
 
-log_info "Cleanup: Backup does not require temporary files with tar -Jcf."
-
-log_header "Backup script finished."
+log_header "Backup script finished." >> "${MC_LOG}/backup.log"
 
 # Optional: You might consider adding a cleanup step here to remove archives older than X days/weeks
 # in the destination directory to prevent the backup directory from filling up completely.

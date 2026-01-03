@@ -1,22 +1,105 @@
-*.jar
-*.tmp
-.bash_history
-.bash_logout
-.bashrc
-.cache
-.cloud-locale-test.skip
-.lesshst
-.wget-hsts
-.git
-.ssh
+**/workspace/*
+
 .profile
 .selected_editor
-.viminfo
 backups/
-cache/
-crash-reports/
-libraries/
-logs/
 test/
-versions/
-server.jar
+
+
+# Python
+__pycache__/
+.python_history
+*.retry
+
+# Java
+*.jar
+**/*.jar
+.gradle/
+.java
+
+# Binaries and executables
+bin/mcrcon
+*.out
+run.bat
+
+# IDE and temp files
+.cache/
+*.swp
+.viminfo
+logs/
+website.log
+*.tmp
+**/*.tmp
+.*.drawio.bkp
+.*.drawio.dtmp
+.lesshst
+website/.well-known/
+.wget-hsts
+
+# Python package directories
+.venv/
+env/
+package-lock.json
+
+# Minecraft
+server_minecraft/automodpack/.private/automodpack-secrets.json
+server_minecraft/automodpack/.private/key.pem
+server_minecraft/automodpack/.private/cert.crt
+minecraft/
+mc-wrapper/
+mods/
+mods/mods_1.20/
+mods/mods_1.20.2/
+mods/mods_1.20.4/
+mods/mods_1.21/
+mods/old/
+plugins/*.jar
+plugins/discord-console-logs/
+
+# Testing artifacts
+**/cache/
+**/_test/
+_test/
+"*.test"
+
+# Configuration and local
+.bash*
+.cloud*
+.config
+.gradle
+.joe*
+.m2
+.local
+.mozilla
+.nix-defexpr
+.nix-profile
+.oh-my-bash/
+.osh-update
+.Xauthority
+.xsession-errors
+
+# Backup and archive
+archive/
+backup/
+_backup/
+
+# Logs
+logs/
+crash-reports
+debug/
+
+# Other
+packages/
+**/session.lock
+.sdirs
+**/*.zip
+.gnupg/
+.ssh/
+.steam/
+bluemap/web/
+go/pkg/
+libraries/
+logs
+workspace/
+
+lang/messages_*
