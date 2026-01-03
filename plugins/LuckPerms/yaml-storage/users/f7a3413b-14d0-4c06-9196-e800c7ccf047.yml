@@ -1,0 +1,7 @@
+uuid: f7a3413b-14d0-4c06-9196-e800c7ccf047
+name: 'null'
+primary-group: default
+permissions:
+- luckperms.*
+parents:
+- default
