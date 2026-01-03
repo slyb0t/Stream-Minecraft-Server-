@@ -1,13 +1,16 @@
 {
   "stats": {
     "minecraft:custom": {
+      "minecraft:open_barrel": 1,
+      "minecraft:open_chest": 1,
       "minecraft:sleep_in_bed": 1,
-      "minecraft:time_since_rest": 829,
-      "minecraft:walk_one_cm": 12358,
-      "minecraft:total_world_time": 1475,
+      "minecraft:time_since_rest": 18903,
+      "minecraft:walk_one_cm": 17249,
+      "minecraft:total_world_time": 19549,
       "minecraft:leave_game": 2,
-      "minecraft:play_time": 1475,
-      "minecraft:time_since_death": 1475
+      "minecraft:play_time": 19549,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 19549
     }
   },
   "DataVersion": 4671
