@@ -1,27 +1,10 @@
 **/workspace/*
 
-*.jar
-*.tmp
-.bash_history
-.bash_logout
-.bashrc
-.cache
-.cloud-locale-test.skip
-.lesshst
-.wget-hsts
-.git
-.ssh
 .profile
 .selected_editor
-.viminfo
 backups/
-cache/
-crash-reports/
-libraries/
-logs/
 test/
-versions/
-server.jar
+
 
 # Python
 __pycache__/
@@ -120,4 +103,3 @@ logs
 workspace/
 
 lang/messages_*
-

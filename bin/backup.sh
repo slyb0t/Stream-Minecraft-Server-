@@ -21,7 +21,6 @@ MC_LOG="/var/log/minecraft" # Log directory for the server
 BACKUP_DIR="${MC_HOME}/backups"
 MC_WORLD_DIR="${MC_HOME}" # The directory containing 'world', 'world_nether', 'world_the_end'
 
-# Collect existing files into an array
 BACKUP_TARGETS=(
   "${MC_WORLD_DIR}/world"
   "${MC_WORLD_DIR}/world_nether"
