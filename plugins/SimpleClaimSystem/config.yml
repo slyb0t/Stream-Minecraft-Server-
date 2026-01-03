@@ -2,11 +2,6 @@
 # *  General settings  *
 # **********************
 
-<<<<<<< HEAD
-=======
-
-# Update settings
->>>>>>> origin/main
 check-for-updates: true
 updates-notifications: true
 
@@ -36,17 +31,6 @@ command-aliases:
 
 # Configure the aliases of the worlds.
 world-aliases:
-<<<<<<< HEAD
-  world: World
-  world_nether: Nether
-  world_the_end: End
-
-# auto-purge-checking is in minutes (every x minutes the plugin will purge the claims)
-# auto-purge-time-without-login accepts this format : 5s, 5m, 5h, 5d, 5w (5 is for example)
-auto-purge: true
-auto-purge-checking: 60
-auto-purge-time-without-login: 26w
-=======
   world: Overworld
   world_nether: Nether
   world_the_end: End
@@ -63,7 +47,6 @@ auto-purge-time-without-login: 26w
 auto-purge: false
 auto-purge-checking: 60
 auto-purge-time-without-login: 14d
->>>>>>> origin/main
 
 # Mode for claims per world
 # Modes:
@@ -117,17 +100,10 @@ claim-fly-message-auto-fly: true
 enter-leave-messages: false
 
 # Enable/Disable the enter/leave message in the title and subtitle
-<<<<<<< HEAD
 enter-leave-title-messages: false
 
 # Enable/Disable the enter/leave message in the chat
 enter-leave-chat-messages: false
-=======
-enter-leave-title-messages: true
-
-# Enable/Disable the enter/leave message in the chat
-enter-leave-chat-messages: true
->>>>>>> origin/main
 
 # Should claims with the GuiTeleport setting disabled be displayed in /claims?
 claims-visitors-off-visible: true
@@ -192,16 +168,8 @@ map-type: SCOREBOARD
 expulsion-location: {}
 
 
-<<<<<<< HEAD
-=======
-# ******************
-# *  Map settings  *
-# ******************
-
-
->>>>>>> origin/main
 # Dynmap support
-dynmap: true
+dynmap: false
 dynmap-settings:
   claim-border-color: FFFFFF
   claim-fill-color: A5A5A5
@@ -215,7 +183,7 @@ bluemap-settings:
   claim-hover-text: '%claim-name% - Owner: %owner%'
 
 # Pl3xmap support
-pl3xmap: true
+pl3xmap: false
 pl3xmap-settings:
   claim-border-color: FFFFFF
   claim-fill-color: A5A5A5

@@ -14,34 +14,20 @@ duration-format: 'mm:ss'
 chest:
   # The expiration of the chest in seconds.
   # You can deactivate the expiration by setting the value to -1
-<<<<<<< HEAD
   expiration: -1
   no-expiration-permission:
     enabled: true
-=======
-  expiration: 600
-  no-expiration-permission:
-    enabled: false
->>>>>>> origin/main
     permission: 'deathchest.stays-forever'
   # If this feature is enabled all caught items will be dropped if the chest has expired.
   drop-items-after-expiration: false
   # Set this option to true if you want to protect the death chests against explosions.
-<<<<<<< HEAD
   blast-protection: true
-=======
-  blast-protection: false
->>>>>>> origin/main
 
   # This option protects the death chest against thieves if the player has the specific permission and the thief
   # not the bypass permission.
   thief-protection:
     # Set the value to 'true' if you want to activate this feature
-<<<<<<< HEAD
     enabled: true
-=======
-    enabled: false
->>>>>>> origin/main
     # To enable the thief protection the player needs this permission
     permission: 'deathchest.thiefprotected'
     # To let the admin bypass the protection he needs this permission
@@ -114,11 +100,7 @@ player-notification:
   # Set the value to 'false' if you want to deactivate this feature
   enabled: true
   message: |-
-<<<<<<< HEAD
     &7You died. Your items were put into a chest&7! ${x} ${y} ${z}
-=======
-    &7You died. Your items were put into a chest which disappears after &c10 minutes&7! ${x} ${y} ${z}
->>>>>>> origin/main
 
 # Available Placeholders:
 # ${player_name} : shows the player name
@@ -128,11 +110,7 @@ player-notification:
 # ${chest_x}, ${chest_y}, ${chest_z} : shows the coordinates of the chest
 global-notification:
   # Set the value to 'true' if you want to activate this feature
-<<<<<<< HEAD
   enabled: true
-=======
-  enabled: false
->>>>>>> origin/main
   exclude-died-player: false
   message: |-
     &7${player_name} died at ${x} ${y} ${z} in ${world}
@@ -170,8 +148,4 @@ world-alias:
 # Do not touch this!
 config-version: 3
 # Prints debug messages if property is set to true
-<<<<<<< HEAD
 debug: false
-=======
-debug: false
->>>>>>> origin/main
