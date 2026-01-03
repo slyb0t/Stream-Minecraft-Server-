@@ -1,1 +1,7 @@
 {"timestamp":1767402348,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"USER","uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"null"},"description":"permission set luckperms.* true"}
+{"timestamp":1767402491,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"admin"},"description":"create"}
+{"timestamp":1767402531,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"admin"},"description":"permission set minecraft.command.ban true"}
+{"timestamp":1767402629,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"USER","uniqueId":"7b9fd287-b299-49c7-9040-84cc7b3e0c2e","name":"null"},"description":"parent add admin"}
+{"timestamp":1767402645,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"mod"},"description":"create"}
+{"timestamp":1767402656,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"admin"},"description":"parent add mod"}
+{"timestamp":1767402694,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"USER","uniqueId":"7b9fd287-b299-49c7-9040-84cc7b3e0c2e","name":"null"},"description":"permission set luckperms.* true"}

@@ -1,0 +1,5 @@
+name: admin
+permissions:
+- minecraft.command.ban
+parents:
+- mod
