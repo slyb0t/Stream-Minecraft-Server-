@@ -1,51 +1,91 @@
 {
   "stats": {
-    "minecraft:used": {
-      "minecraft:hay_block": 3,
-      "minecraft:stone_hoe": 159,
-      "minecraft:copper_sword": 6,
-      "minecraft:bread": 2,
-      "minecraft:wheat_seeds": 159
-    },
-    "minecraft:custom": {
-      "minecraft:interact_with_crafting_table": 1,
-      "minecraft:time_since_rest": 10639,
-      "minecraft:walk_one_cm": 92206,
-      "minecraft:leave_game": 1,
-      "minecraft:mob_kills": 1,
-      "minecraft:damage_taken": 38,
-      "minecraft:damage_dealt": 199,
-      "minecraft:play_time": 16902,
-      "minecraft:jump": 179,
-      "minecraft:time_since_death": 16902,
-      "minecraft:drop": 2,
-      "minecraft:sprint_one_cm": 73820,
-      "minecraft:open_chest": 15,
-      "minecraft:sleep_in_bed": 1,
-      "minecraft:fall_one_cm": 4750,
-      "minecraft:total_world_time": 16902,
-      "minecraft:fly_one_cm": 35322
-    },
     "minecraft:dropped": {
+      "minecraft:glass_bottle": 1,
+      "minecraft:copper_torch": 1,
+      "minecraft:oak_pressure_plate": 1,
       "minecraft:flint": 1,
-      "minecraft:dirt": 4
+      "minecraft:dirt": 6
     },
-    "minecraft:picked_up": {
-      "minecraft:egg": 3,
+    "minecraft:broken": {
+      "minecraft:iron_leggings": 1
+    },
+    "minecraft:mined": {
+      "minecraft:oak_pressure_plate": 1,
+      "minecraft:sweet_berry_bush": 1,
+      "minecraft:coal_ore": 29,
+      "minecraft:grass_block": 1,
+      "minecraft:wheat": 152,
+      "minecraft:oak_planks": 1,
+      "minecraft:powered_rail": 1,
+      "minecraft:cobblestone": 1,
       "minecraft:hay_block": 1,
-      "minecraft:wheat_seeds": 395,
-      "minecraft:wheat": 148
+      "minecraft:stone": 2,
+      "minecraft:copper_wall_torch": 1
     },
     "minecraft:killed": {
       "minecraft:zombie": 1
     },
+    "minecraft:used": {
+      "minecraft:hay_block": 3,
+      "minecraft:iron_axe": 1,
+      "minecraft:iron_pickaxe": 32,
+      "minecraft:copper_sword": 6,
+      "minecraft:cobblestone": 3,
+      "minecraft:wheat_seeds": 159,
+      "minecraft:stone_hoe": 160,
+      "minecraft:powered_rail": 1,
+      "minecraft:potion": 1,
+      "minecraft:oak_planks": 1,
+      "minecraft:dark_oak_button": 1,
+      "minecraft:stone_pickaxe": 1,
+      "minecraft:bread": 6
+    },
+    "minecraft:custom": {
+      "minecraft:minecart_one_cm": 79921,
+      "minecraft:interact_with_crafting_table": 5,
+      "minecraft:time_since_rest": 9362,
+      "minecraft:walk_one_cm": 189154,
+      "minecraft:leave_game": 2,
+      "minecraft:horse_one_cm": 175198,
+      "minecraft:mob_kills": 1,
+      "minecraft:damage_taken": 76,
+      "minecraft:play_time": 46226,
+      "minecraft:damage_dealt": 199,
+      "minecraft:jump": 485,
+      "minecraft:time_since_death": 46226,
+      "minecraft:drop": 7,
+      "minecraft:interact_with_furnace": 2,
+      "minecraft:sprint_one_cm": 176836,
+      "minecraft:open_chest": 32,
+      "minecraft:sleep_in_bed": 3,
+      "minecraft:fall_one_cm": 9706,
+      "minecraft:total_world_time": 46226,
+      "minecraft:fly_one_cm": 74225,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:interact_with_blast_furnace": 2
+    },
+    "minecraft:picked_up": {
+      "minecraft:egg": 5,
+      "minecraft:sweet_berries": 2,
+      "minecraft:dirt": 2,
+      "minecraft:oak_pressure_plate": 1,
+      "minecraft:cobblestone": 3,
+      "minecraft:powered_rail": 1,
+      "minecraft:oak_planks": 1,
+      "minecraft:copper_torch": 2,
+      "minecraft:dark_oak_button": 1,
+      "minecraft:coal": 67,
+      "minecraft:hay_block": 1,
+      "minecraft:glass_bottle": 1,
+      "minecraft:wheat_seeds": 395,
+      "minecraft:wheat": 148
+    },
     "minecraft:crafted": {
       "minecraft:bread": 42,
-      "minecraft:hay_block": 2
-    },
-    "minecraft:mined": {
-      "minecraft:wheat": 152,
-      "minecraft:hay_block": 1
+      "minecraft:coal_block": 20,
+      "minecraft:hay_block": 2,
+      "minecraft:iron_leggings": 1
     }
   },
   "DataVersion": 4671
