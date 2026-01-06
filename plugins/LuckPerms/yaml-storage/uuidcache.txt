@@ -1,0 +1,4 @@
+# LuckPerms UUID lookup cache
+f7a3413b-14d0-4c06-9196-e800c7ccf047:theDevilsVoice
+3bdc1a47-bd8c-4927-8936-9fa9633b232c:CobbleMaster1
+7b9fd287-b299-49c7-9040-84cc7b3e0c2e:slyborg4realz

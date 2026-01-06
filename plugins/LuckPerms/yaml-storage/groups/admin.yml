@@ -1,0 +1,36 @@
+name: admin
+permissions:
+- bukkit
+- craftbukkit
+- deathchest
+- deathchest.admin
+- luckperms
+- luckperms.applyedits
+- luckperms.bulkupdate
+- luckperms.creategroup
+- luckperms.createtrack
+- luckperms.deletegroup
+- luckperms.deletetrack
+- luckperms.editor
+- luckperms.export
+- luckperms.group
+- luckperms.import
+- luckperms.info
+- luckperms.listgroups
+- luckperms.listtracks
+- luckperms.reloadconfig
+- luckperms.search
+- luckperms.sync
+- luckperms.translations
+- luckperms.tree
+- luckperms.trusteditor
+- minecraft
+- minecraft.admin
+- minimotd
+- minimotd.admin
+- scs
+- scs.admin
+- spark
+- spark.tickmonitor
+parents:
+- mod
