@@ -124,3 +124,5 @@
 {"timestamp":1767403705,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"admin"},"description":"webeditor remove luckperms.group.info true"}
 {"timestamp":1767403705,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"admin"},"description":"webeditor remove luckperms.group.listmembers true"}
 {"timestamp":1767403705,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"admin"},"description":"webeditor remove minecraft.command.ban true"}
+{"timestamp":1767654208,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"minesauce"},"description":"create"}
+{"timestamp":1767654278,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"minesauce"},"description":"permission set scs true server=world"}

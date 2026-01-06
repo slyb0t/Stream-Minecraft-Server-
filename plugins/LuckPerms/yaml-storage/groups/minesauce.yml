@@ -1,0 +1,6 @@
+name: minesauce
+permissions:
+- scs:
+    value: true
+    context:
+      server: world
