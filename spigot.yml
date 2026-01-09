@@ -37,7 +37,7 @@ settings:
       max: 2048.0
   log-villager-deaths: true
   log-named-deaths: true
-  bungeecord: false
+  bungeecord: true
   save-user-cache-on-stop-only: false
   sample-count: 12
   debug: false
