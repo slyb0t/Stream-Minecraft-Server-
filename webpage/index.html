@@ -1,0 +1,202 @@
+This is a great idea. Having a simple web page is the best way to onboard new players and reduce the amount of times people ask "How do I claim land?" in chat.
+
+Here is a complete, single-file HTML page tailored to the plugins you listed. It uses a modern "dark mode" theme that is easy on the eyes and looks professional.
+
+You can save the code below as an `.html` file (e.g., `plugins.html`) and upload it to your web hosting, or even just open it locally in your browser to look at it.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Plugins Guide</title>
+    <style>
+        :root {
+            --bg-color: #1a1a2e;
+            --card-bg: #16213e;
+            --text-primary: #e9ecef;
+            --text-secondary: #a8b2d1;
+            --accent-color: #4cc9f0;
+            --accent-hover: #3a9bdc;
+            --border-color: #2a3a5a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: var(--accent-color);
+        }
+
+        .intro {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 10px auto 0;
+        }
+
+        .plugin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .plugin-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .plugin-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .plugin-title {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+        }
+
+        /* Optional icons for visual flair */
+        .icon { margin-right: 10px; }
+
+        .plugin-desc {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .features-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .features-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .features-list li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .command-tip {
+            background-color: rgba(76, 201, 240, 0.1);
+            padding: 10px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: var(--accent-color);
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Server Features Guide</h1>
+        <p class="intro">Welcome! We use a few lightweight plugins to enhance survival gameplay, protect your builds, and keep the community connected.</p>
+    </header>
+
+    <div class="plugin-grid">
+
+        <div class="plugin-card">
+            <h2 class="plugin-title"><span class="icon">🛡️</span>Land Claiming</h2>
+            <p class="plugin-desc">Don't let griefers ruin your hard work! We use <strong>SimpleClaimSystem</strong> to let you protect your land, chests, and builds.</p>
+            <ul class="features-list">
+                <li>Protect your base from other players breaking blocks.</li>
+                <li>Prevent others from opening your chests or doors.</li>
+                <li>Manage who you trust on your land.</li>
+            </ul>
+            <div class="command-tip">
+                Tip: Type <code>/claim help</code> or check the starting inventory books to learn how to start claiming land!
+            </div>
+        </div>
+
+        <div class="plugin-card">
+            <h2 class="plugin-title"><span class="icon">☠️</span>Death Chests</h2>
+            <p class="plugin-desc">Dying is stressful, but losing your items shouldn't be. We use <strong>DeathChest</strong> to safely store your inventory when you fall.</p>
+            <ul class="features-list">
+                <li>When you die, a chest spawns at your location containing your items.</li>
+                <li>Your items won't despawn or explode everywhere.</li>
+                <li>Hurry back to collect your gear!</li>
+            </ul>
+            <div class="command-tip">
+                Coordinates to your death chest usually appear in chat when you die.
+            </div>
+        </div>
+
+        <div class="plugin-card">
+            <h2 class="plugin-title"><span class="icon">💬</span>Discord Chat Link</h2>
+            <p class="plugin-desc">Stay connected even when you aren't on the server. <strong>DiscordSRV</strong> bridges Minecraft chat with our Discord server.</p>
+            <ul class="features-list">
+                <li>Talk to players in-game from the Discord channel.</li>
+                <li>See Discord messages while playing Minecraft.</li>
+                <li>See who joins and leaves in real-time.</li>
+            </ul>
+            <div class="command-tip">
+                Don't forget to join our Discord server to use this feature!
+            </div>
+        </div>
+
+        <div class="plugin-card">
+            <h2 class="plugin-title"><span class="icon">⚙️</span>Server Essentials</h2>
+            <p class="plugin-desc">These plugins run in the background to keep things running smoothly and looking nice.</p>
+            <ul class="features-list">
+                <li><strong>LuckPerms:</strong> Handles player ranks, prefixes in chat, and ensures you have the right permissions to use commands.</li>
+                <li><strong>MiniMOTD:</strong> Provides the neat descriptions and icons you see in your multiplayer server list before joining.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        Running on Paper Minecraft 1.21.11
+    </footer>
+</div>
+
+</body>
+</html>
+
+```
