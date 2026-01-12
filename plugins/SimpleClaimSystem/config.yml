@@ -165,7 +165,13 @@ teleportation-delay-moving: false
 map-type: SCOREBOARD
 
 # Location when a player is banned/kicked from a claim
-expulsion-location: {}
+expulsion-location:
+  world: world
+  x: -52.17149447895513
+  y: 95.5
+  z: -307.4987788379124
+  yaw: 176.84995
+  pitch: 31.500015
 
 
 # Dynmap support
