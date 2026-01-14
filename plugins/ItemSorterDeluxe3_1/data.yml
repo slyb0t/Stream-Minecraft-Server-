@@ -59,6 +59,6 @@ players:
         z: -301
     world: world
     input:
-      x: -126
-      y: 95
+      x: -143
+      y: 96
       z: -342
