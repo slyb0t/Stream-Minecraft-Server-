@@ -41,8 +41,24 @@ players:
         x: -149
         y: 97
         z: -335
+      PUMPKIN:
+        x: -127
+        y: 97
+        z: -300
+      ROTTEN_FLESH:
+        x: -127
+        y: 97
+        z: -299
+      SUGAR_CANE:
+        x: -127
+        y: 97
+        z: -302
+      NETHERRACK:
+        x: -127
+        y: 97
+        z: -301
     world: world
     input:
-      x: -143
-      y: 96
+      x: -126
+      y: 95
       z: -342
