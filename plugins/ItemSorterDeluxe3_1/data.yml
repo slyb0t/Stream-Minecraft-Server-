@@ -1,0 +1,48 @@
+players:
+  theDevilsVoice:
+    targets:
+      IRON_INGOT:
+        x: -146
+        y: 97
+        z: -334
+      COAL:
+        x: -136
+        y: 96
+        z: -340
+      IRON_NUGGET:
+        x: -146
+        y: 97
+        z: -334
+      EMERALD:
+        x: -146
+        y: 97
+        z: -332
+      LAPIS_LAZULI:
+        x: -146
+        y: 97
+        z: -329
+      OAK_PLANKS:
+        x: -149
+        y: 97
+        z: -334
+      BIRCH_PLANKS:
+        x: -149
+        y: 97
+        z: -333
+      SPRUCE_PLANKS:
+        x: -149
+        y: 97
+        z: -332
+      CHERRY_PLANKS:
+        x: -149
+        y: 97
+        z: -331
+      DARK_OAK_LOG:
+        x: -149
+        y: 97
+        z: -335
+    world: world
+    input:
+      x: -143
+      y: 96
+      z: -342
