@@ -57,6 +57,10 @@ players:
         x: -127
         y: 97
         z: -301
+      BASALT:
+        x: -146
+        y: 97
+        z: -328
     world: world
     input:
       x: -143
