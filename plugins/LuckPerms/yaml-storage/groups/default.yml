@@ -1,6 +1,7 @@
 name: default
 permissions:
 - deathchest
+- itemsorterdeluxe
 - luckperms
 - minecraft
 - scs

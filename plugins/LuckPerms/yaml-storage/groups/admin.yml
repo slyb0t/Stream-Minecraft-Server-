@@ -4,6 +4,8 @@ permissions:
 - craftbukkit
 - deathchest
 - deathchest.admin
+- itemsorterdeluxe
+- itemsorterdeluxe.admin
 - luckperms
 - luckperms.applyedits
 - luckperms.bulkupdate

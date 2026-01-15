@@ -1,68 +1,28 @@
 players:
   theDevilsVoice:
-    targets:
-      IRON_INGOT:
-        x: -146
-        y: 97
-        z: -334
-      COAL:
-        x: -136
-        y: 96
-        z: -340
-      IRON_NUGGET:
-        x: -146
-        y: 97
-        z: -334
-      EMERALD:
-        x: -146
-        y: 97
-        z: -332
-      LAPIS_LAZULI:
-        x: -146
-        y: 97
-        z: -329
-      OAK_PLANKS:
-        x: -149
-        y: 97
-        z: -334
-      BIRCH_PLANKS:
-        x: -149
-        y: 97
-        z: -333
-      SPRUCE_PLANKS:
-        x: -149
-        y: 97
-        z: -332
-      CHERRY_PLANKS:
-        x: -149
-        y: 97
-        z: -331
-      DARK_OAK_LOG:
-        x: -149
-        y: 97
-        z: -335
-      PUMPKIN:
-        x: -127
-        y: 97
-        z: -300
-      ROTTEN_FLESH:
-        x: -127
-        y: 97
-        z: -299
-      SUGAR_CANE:
-        x: -127
-        y: 97
-        z: -302
-      NETHERRACK:
-        x: -127
-        y: 97
-        z: -301
-      BASALT:
-        x: -146
-        y: 97
-        z: -328
     world: world
     input:
       x: -143
       y: 96
       z: -342
+    targets:
+      PUMPKIN:
+        x: -124
+        y: 96
+        z: -329
+      SUGAR_CANE:
+        x: -132
+        y: 96
+        z: -346
+      ROTTEN_FLESH:
+        x: -134
+        y: 96
+        z: -346
+      IRON_INGOT:
+        x: -134
+        y: 96
+        z: -346
+      FLINT:
+        x: -136
+        y: 96
+        z: -346

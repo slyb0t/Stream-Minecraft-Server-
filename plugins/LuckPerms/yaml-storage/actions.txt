@@ -126,3 +126,10 @@
 {"timestamp":1767403705,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"admin"},"description":"webeditor remove minecraft.command.ban true"}
 {"timestamp":1767654208,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"minesauce"},"description":"create"}
 {"timestamp":1767654278,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"minesauce"},"description":"permission set scs true server=world"}
+{"timestamp":1768448758,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"TRACK","name":"highseaspiracy"},"description":"create"}
+{"timestamp":1768448995,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"admin"},"description":"webeditor add itemsorterdeluxe.admin true"}
+{"timestamp":1768448995,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"admin"},"description":"webeditor add itemsorterdeluxe true"}
+{"timestamp":1768448995,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"default"},"description":"webeditor add itemsorterdeluxe true"}
+{"timestamp":1768448995,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"mod"},"description":"webeditor add deathchest.admin true"}
+{"timestamp":1768448995,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"TRACK","name":"highseaspiracy"},"description":"webeditor add default"}
+{"timestamp":1768448995,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"TRACK","name":"highseaspiracy"},"description":"webeditor add minesauce"}
