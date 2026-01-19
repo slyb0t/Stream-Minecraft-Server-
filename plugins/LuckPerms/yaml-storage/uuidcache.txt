@@ -1,10 +1,17 @@
 # LuckPerms UUID lookup cache
 8f422ce3-ff60-44a2-82f4-7f7e7d6f5a26:JarSauceBinks
-5e68fd56-57ab-41f1-b072-4db0863c616a:Drewzk3
 fc6c94a8-dc53-4f97-a644-910fda86a5cd:Xefreh
+80f8e86a-f1ef-4f29-9dde-6663b6211049:KittyScan01
+4d1d7d4c-ab90-430e-8701-36e05d06b5ab:Horkrine
+9be5891f-4fac-4c66-b264-9940b4dfd560:SaiyanKamii
+2c1b8794-67f1-414f-a8fb-e423170c3808:lazarleandoer
+a4221cf7-788d-4907-8239-e747ec267b29:Sysosmaster
+5e68fd56-57ab-41f1-b072-4db0863c616a:Drewzk3
 f7a3413b-14d0-4c06-9196-e800c7ccf047:theDevilsVoice
 78be1a00-60df-416b-a5d8-9e80aca07446:Pocket427
+13a49b47-e94d-4a81-b79f-fe552cd06640:1337CuberII
 3bdc1a47-bd8c-4927-8936-9fa9633b232c:CobbleMaster1
 9fa6c0ac-865f-40ca-81ae-a8d17c4d0114:bedro_0000
 7b9fd287-b299-49c7-9040-84cc7b3e0c2e:slyborg4realz
-9be5891f-4fac-4c66-b264-9940b4dfd560:SaiyanKamii
+a51ae5ce-5a0b-458e-98ac-88d7d119a329:Codetoil
+81b2c915-f5ed-4bcb-ae69-63b463af9f0f:Braindamage92

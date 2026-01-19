@@ -26,3 +26,83 @@ players:
         x: -136
         y: 96
         z: -346
+      COBBLESTONE:
+        x: 102
+        y: 78
+        z: -71
+      DIRT:
+        x: -290
+        y: 66
+        z: -237
+      GRAVEL:
+        x: -138
+        y: 89
+        z: -318
+      COAL:
+        x: -138
+        y: 91
+        z: -318
+      COBBLED_DEEPSLATE:
+        x: -138
+        y: 91
+        z: -320
+      DEEPSLATE:
+        x: -138
+        y: 91
+        z: -320
+      STONE:
+        x: -138
+        y: 89
+        z: -320
+      ANDESITE:
+        x: -138
+        y: 89
+        z: -322
+      CALCITE:
+        x: -138
+        y: 91
+        z: -322
+      LAPIS_LAZULI:
+        x: -141
+        y: 89
+        z: -318
+      BASALT:
+        x: -141
+        y: 89
+        z: -320
+      TUFF:
+        x: -141
+        y: 89
+        z: -322
+      BLACKSTONE:
+        x: -141
+        y: 91
+        z: -318
+      OBSIDIAN:
+        x: -141
+        y: 91
+        z: -320
+      CLAY_BALL:
+        x: -141
+        y: 91
+        z: -322
+      EMERALD:
+        x: -143
+        y: 89
+        z: -322
+      SAND:
+        x: -143
+        y: 89
+        z: -320
+      SOUL_SOIL:
+        x: -143
+        y: 89
+        z: -318
+      NETHERRACK:
+        x: -143
+        y: 91
+        z: -320
+      MAGMA_BLOCK:
+        x: -143
+        y: 91
+        z: -318

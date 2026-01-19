@@ -133,3 +133,14 @@
 {"timestamp":1768448995,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"mod"},"description":"webeditor add deathchest.admin true"}
 {"timestamp":1768448995,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"TRACK","name":"highseaspiracy"},"description":"webeditor add default"}
 {"timestamp":1768448995,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"TRACK","name":"highseaspiracy"},"description":"webeditor add minesauce"}
+{"timestamp":1768847553,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"default"},"description":"webeditor remove deathchest true"}
+{"timestamp":1768847553,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"default"},"description":"webeditor remove itemsorterdeluxe true"}
+{"timestamp":1768847553,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"default"},"description":"webeditor remove luckperms true"}
+{"timestamp":1768847553,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"default"},"description":"webeditor remove scs true"}
+{"timestamp":1768847553,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"minesauce"},"description":"webeditor add itemsorterdeluxe true"}
+{"timestamp":1768847553,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"minesauce"},"description":"webeditor add scs true"}
+{"timestamp":1768847640,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"default"},"description":"webeditor add group.minesauce true"}
+{"timestamp":1768847640,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"minesauce"},"description":"webeditor add group.mod true"}
+{"timestamp":1768847640,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"minesauce"},"description":"webeditor remove itemsorterdeluxe true"}
+{"timestamp":1768847640,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"minesauce"},"description":"webeditor remove scs true"}
+{"timestamp":1768847640,"source":{"uniqueId":"f7a3413b-14d0-4c06-9196-e800c7ccf047","name":"theDevilsVoice"},"target":{"type":"GROUP","name":"mod"},"description":"webeditor add group.admin true"}

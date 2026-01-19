@@ -4,3 +4,5 @@ permissions:
     value: true
     context:
       server: world
+parents:
+- mod

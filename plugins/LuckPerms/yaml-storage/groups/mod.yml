@@ -1,3 +1,5 @@
 name: mod
 permissions:
 - deathchest.admin
+parents:
+- admin

@@ -1,7 +1,5 @@
 name: default
 permissions:
-- deathchest
-- itemsorterdeluxe
-- luckperms
 - minecraft
-- scs
+parents:
+- minesauce
