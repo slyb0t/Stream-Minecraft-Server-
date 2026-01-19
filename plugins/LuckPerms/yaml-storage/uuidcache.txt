@@ -1,6 +1,6 @@
 # LuckPerms UUID lookup cache
-fc6c94a8-dc53-4f97-a644-910fda86a5cd:Xefreh
 8f422ce3-ff60-44a2-82f4-7f7e7d6f5a26:JarSauceBinks
+fc6c94a8-dc53-4f97-a644-910fda86a5cd:Xefreh
 80f8e86a-f1ef-4f29-9dde-6663b6211049:KittyScan01
 4d1d7d4c-ab90-430e-8701-36e05d06b5ab:Horkrine
 9be5891f-4fac-4c66-b264-9940b4dfd560:SaiyanKamii
