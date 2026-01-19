@@ -1,0 +1,8 @@
+uuid: 7b9fd287-b299-49c7-9040-84cc7b3e0c2e
+name: slyborg4realz
+primary-group: default
+permissions:
+- luckperms.*
+parents:
+- admin
+- default

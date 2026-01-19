@@ -1,5 +1,7 @@
 **/workspace/*
 
+plugins/DiscordSRV/config.yml
+
 .profile
 .selected_editor
 backups/

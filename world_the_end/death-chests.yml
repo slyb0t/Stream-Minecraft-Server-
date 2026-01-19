@@ -1,1 +1,69 @@
-chests: []
+chests:
+- createdAt: 1768612958065
+  protected: false
+  location:
+    ==: org.bukkit.Location
+    world: world_the_end
+    x: 101.0
+    y: 49.0
+    z: 0.0
+    pitch: 0.0
+    yaw: 0.0
+  expireAt: -1
+  items:
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:cooked_beef
+    count: 32
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:crafting_table
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_axe
+    count: 1
+    components:
+      minecraft:damage: '7'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:carrot
+    count: 60
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:cooked_chicken
+    count: 30
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:iron_boots
+    count: 1
+    components:
+      minecraft:damage: '8'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:iron_leggings
+    count: 1
+    components:
+      minecraft:damage: '8'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:iron_chestplate
+    count: 1
+    components:
+      minecraft:damage: '8'
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:iron_helmet
+    count: 1
+    components:
+      minecraft:damage: '25'
+    schema_version: 1
+  player: 13a49b47-e94d-4a81-b79f-fe552cd06640

@@ -1,0 +1,68 @@
+[19:32:20 WARN]: ketchup_lube moved wrongly!
+[19:32:31 WARN]: ketchup_lube moved wrongly!
+[19:32:32 INFO]: <bedro_0000> we got griefed
+[19:32:34 INFO]: UUID of player Epstein__Island is e65f0f7e-952a-4ea2-8529-b28aecb9fffb
+[19:32:35 INFO]: Epstein__Island joined the game
+[19:32:35 INFO]: Epstein__Island[/50.5.231.118:41036] logged in with entity id 217758 at ([world]45.7980335708244, 110.40308154298717, -2.9800349883165724)
+[19:32:41 WARN]: ketchup_lube moved wrongly!
+[19:32:54 INFO]: <ketchup_lube> say nigger!
+[19:32:58 WARN]: ketchup_lube moved wrongly!
+[19:33:00 WARN]: Epstein__Island moved wrongly!
+[19:33:01 WARN]: Epstein__Island moved wrongly!
+[19:33:05 WARN]: ketchup_lube moved wrongly!
+[19:33:10 WARN]: ketchup_lube moved wrongly!
+[19:33:26 INFO]: bedro_0000 died at -56 70 -106 in world
+[19:33:26 INFO]: bedro_0000 was slain by Epstein__Island
+[19:33:35 WARN]: ketchup_lube moved wrongly!
+[19:33:38 INFO]: bedro_0000 was slain by Epstein__Island
+[19:33:47 INFO]: bedro_0000 was slain by Epstein__Island
+[19:34:04 WARN]: ketchup_lube moved wrongly!
+[19:34:05 INFO]: bedro_0000 died at -48 70 -102 in world
+[19:34:05 INFO]: bedro_0000 was slain by Epstein__Island
+[19:34:19 WARN]: ketchup_lube moved wrongly!
+[19:34:24 WARN]: ketchup_lube moved wrongly!
+[19:34:30 WARN]: ketchup_lube moved wrongly!
+[19:34:36 WARN]: Epstein__Island moved wrongly!
+[19:34:36 WARN]: [DiscordSRV] Plugin DiscordSRV v1.30.3 generated an exception while executing task 4087628
+java.lang.IllegalArgumentException: Unknown gamerule: announceAdvancements
+        at org.bukkit.craftbukkit.CraftWorld.getGameRuleValue(CraftWorld.java:1669) ~[paper-1.21.11.jar:1.21.11-72-cd445fd]
+        at DiscordSRV-Build-1.30.3.jar//github.scarsz.discordsrv.listeners.PlayerAdvancementDoneListener.advancementIsHiddenInChat(PlayerAdvancementDoneListener.java:176) ~[?:?]
+        at DiscordSRV-Build-1.30.3.jar//github.scarsz.discordsrv.listeners.PlayerAdvancementDoneListener.runAsync(PlayerAdvancementDoneListener.java:93) ~[?:?]
+        at DiscordSRV-Build-1.30.3.jar//github.scarsz.discordsrv.listeners.PlayerAdvancementDoneListener.lambda$onPlayerAdvancementDone$0(PlayerAdvancementDoneListener.java:86) ~[?:?]
+        at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78) ~[paper-1.21.11.jar:1.21.11-72-cd445fd]
+        at org.bukkit.craftbukkit.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57) ~[paper-1.21.11.jar:1.21.11-72-cd445fd]
+        at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[paper-1.21.11.jar:?]
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+        at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:34:41 WARN]: Epstein__Island moved wrongly!
+[19:34:41 INFO]: bedro_0000 was slain by Epstein__Island
+[19:34:53 INFO]: bedro_0000 was slain by Epstein__Island
+[19:34:55 INFO]: <ketchup_lube> yo nigga u there?
+[19:35:04 WARN]: ketchup_lube moved wrongly!
+[19:35:10 WARN]: Epstein__Island moved wrongly!
+[19:35:10 WARN]: ketchup_lube moved wrongly!
+[19:35:13 INFO]: bedro_0000 died at 52 78 -79 in world
+[19:35:13 INFO]: bedro_0000 was slain by Epstein__Island
+[19:35:20 WARN]: ketchup_lube moved wrongly!
+[19:35:23 INFO]: bedro_0000 was slain by ketchup_lube
+[19:35:23 WARN]: [DiscordSRV] Plugin DiscordSRV v1.30.3 generated an exception while executing task 4093960
+java.lang.IllegalArgumentException: Unknown gamerule: announceAdvancements
+        at org.bukkit.craftbukkit.CraftWorld.getGameRuleValue(CraftWorld.java:1669) ~[paper-1.21.11.jar:1.21.11-72-cd445fd]
+        at DiscordSRV-Build-1.30.3.jar//github.scarsz.discordsrv.listeners.PlayerAdvancementDoneListener.advancementIsHiddenInChat(PlayerAdvancementDoneListener.java:176) ~[?:?]
+        at DiscordSRV-Build-1.30.3.jar//github.scarsz.discordsrv.listeners.PlayerAdvancementDoneListener.runAsync(PlayerAdvancementDoneListener.java:93) ~[?:?]
+        at DiscordSRV-Build-1.30.3.jar//github.scarsz.discordsrv.listeners.PlayerAdvancementDoneListener.lambda$onPlayerAdvancementDone$0(PlayerAdvancementDoneListener.java:86) ~[?:?]
+        at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78) ~[paper-1.21.11.jar:1.21.11-72-cd445fd]
+        at org.bukkit.craftbukkit.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57) ~[paper-1.21.11.jar:1.21.11-72-cd445fd]
+        at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[paper-1.21.11.jar:?]
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+        at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[19:35:40 WARN]: ketchup_lube moved wrongly!
+[19:36:27 INFO]: Named entity Horse['Gilbus'/165183, uuid='b79a9084-eb7b-47a5-bb0b-b508f6cf6b7b', l='ServerLevel[world]', x=49.53, y=78.00, z=-40.68, cpos=[3, -3], tl=190552, v=true] died: Gilbus tried to swim in lava
+[19:36:31 INFO]: <bedro_0000> I hope you stub your toe, every step you take
+[19:36:34 INFO]: bedro_0000 was slain by ketchup_lube
+[19:36:41 INFO]: <Epstein__Island> i hope you die
+[19:36:47 INFO]: <bedro_0000> lmfao
+[19:36:48 INFO]: <ketchup_lube> i gaped ur mom last night with my monster cock
+

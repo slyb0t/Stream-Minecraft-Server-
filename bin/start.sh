@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/usr/bin/env bash
 #
 # SPDX-FileCopyrightText: ©2025 franklin
@@ -27,12 +26,16 @@ XMS="3500M"
 
 function main() {
   if [ -f "${SERVER_DIR}/bin/common.sh" ]; then
-  source "${SERVER_DIR}/bin/common.sh"
-else
+    source "${SERVER_DIR}/bin/common.sh"
+  else
   # Simple echo if the logging function source fails
   echo -e "${LRED}Cannot find common.sh. Exiting.${NC}"  >> "${MC_LOG}/backup.log"
-  exit 1
-fi
+    exit 1
+  fi
+
+  if check_installed figlet; then 
+    echo -e "\n" && figlet -f "${SERVER_DIR}/figlet/fonts/pagga" beautimous-betty-chonk && echo -e "\n"
+  fi
 
   log_info "successfully sourced ${SERVER_DIR}/bin/common.sh" && echo -e "\n"
 
@@ -50,8 +53,3 @@ fi
 }
 
 main "$@"
-=======
-#!/usr/bin/bash
-
-java -Xms3500M -Xmx3500M -jar /home/betty/server.jar nogui
->>>>>>> origin/main

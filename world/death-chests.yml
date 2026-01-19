@@ -185,3 +185,26 @@ chests:
       minecraft:damage: '55'
     schema_version: 1
   player: f7a3413b-14d0-4c06-9196-e800c7ccf047
+- createdAt: 1768611233678
+  protected: false
+  location:
+    ==: org.bukkit.Location
+    world: world
+    x: 1423.0
+    y: -30.0
+    z: -499.0
+    pitch: 0.0
+    yaw: 0.0
+  expireAt: -1
+  items:
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:gravel
+    count: 1
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:cracked_stone_bricks
+    count: 1
+    schema_version: 1
+  player: 78be1a00-60df-416b-a5d8-9e80aca07446

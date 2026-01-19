@@ -1,0 +1,57 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:iron_pickaxe": 1,
+      "minecraft:baked_potato": 1,
+      "minecraft:stick": 1
+    },
+    "minecraft:mined": {
+      "minecraft:oak_leaves": 1,
+      "minecraft:potatoes": 71
+    },
+    "minecraft:picked_up": {
+      "minecraft:egg": 3,
+      "minecraft:poisonous_potato": 2,
+      "minecraft:stick": 1,
+      "minecraft:potato": 259,
+      "minecraft:baked_potato": 1,
+      "minecraft:wheat_seeds": 5,
+      "minecraft:wheat": 2,
+      "minecraft:iron_pickaxe": 1,
+      "minecraft:torch": 1,
+      "minecraft:beetroot": 64
+    },
+    "minecraft:crafted": {
+      "minecraft:baked_potato": 128,
+      "minecraft:air": 0
+    },
+    "minecraft:used": {
+      "minecraft:baked_potato": 22,
+      "minecraft:beetroot": 13,
+      "minecraft:potato": 71
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 56963,
+      "minecraft:walk_one_cm": 43082,
+      "minecraft:leave_game": 1,
+      "minecraft:damage_taken": 250,
+      "minecraft:damage_dealt": 38,
+      "minecraft:play_time": 56963,
+      "minecraft:jump": 3050,
+      "minecraft:time_since_death": 56963,
+      "minecraft:drop": 3,
+      "minecraft:interact_with_furnace": 16,
+      "minecraft:sprint_one_cm": 280225,
+      "minecraft:open_chest": 22,
+      "minecraft:fall_one_cm": 95012,
+      "minecraft:total_world_time": 56963,
+      "minecraft:fly_one_cm": 925346,
+      "minecraft:crouch_one_cm": 54,
+      "minecraft:sneak_time": 84,
+      "minecraft:climb_one_cm": 8162,
+      "minecraft:interact_with_blast_furnace": 3
+    }
+  },
+  "DataVersion": 4671
+}

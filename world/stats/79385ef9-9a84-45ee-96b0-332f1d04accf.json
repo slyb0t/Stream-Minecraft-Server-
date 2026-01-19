@@ -1,0 +1,36 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:cobblestone": 16
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 4153,
+      "minecraft:walk_one_cm": 125583,
+      "minecraft:leave_game": 1,
+      "minecraft:damage_taken": 105,
+      "minecraft:damage_dealt": 973,
+      "minecraft:play_time": 4153,
+      "minecraft:jump": 2,
+      "minecraft:time_since_death": 4153,
+      "minecraft:open_barrel": 3,
+      "minecraft:open_chest": 1,
+      "minecraft:fall_one_cm": 232,
+      "minecraft:total_world_time": 4153,
+      "minecraft:fly_one_cm": 1323,
+      "minecraft:crouch_one_cm": 7529,
+      "minecraft:sneak_time": 760,
+      "minecraft:player_kills": 6
+    },
+    "minecraft:used": {
+      "minecraft:iron_axe": 11,
+      "minecraft:lava_bucket": 1,
+      "minecraft:iron_leggings": 2,
+      "minecraft:diamond_pickaxe": 16,
+      "minecraft:iron_helmet": 1,
+      "minecraft:iron_chestplate": 1,
+      "minecraft:iron_boots": 1,
+      "minecraft:cobblestone": 16
+    }
+  },
+  "DataVersion": 4671
+}
