@@ -74,7 +74,8 @@ DEST_DIR="${BACKUP_DIR}/$(date +%A)"
 BACKUP_FILENAME="${MC_USER}-mc-${TODAY}.tar.xz"
 DEST_PATH="${DEST_DIR}/${BACKUP_FILENAME}"
 
-log_header "Starting backup for '${MC_USER}' worlds to ${DEST_DIR}"  >> "${MC_LOG}/backup.log"
+log_header "Starting backup for ${MC_USER} worlds to ${DEST_DIR}" >> "${MC_LOG}/backup.log"
+${MC_HOME}/bin/mcrcon -H localhost -p clamp-navel-orange-time -w 2 "say Starting world backup. Please be patient"
 
 # Create backup directory if it doesn't exist
 if [ ! -d "${DEST_DIR}" ]; then
@@ -92,11 +93,13 @@ log_info "Creating compressed backup file: ${DEST_PATH}" >> "${MC_LOG}/backup.lo
 if tar -Jcf "${DEST_PATH}" "${BACKUP_TARGETS[@]}"; then
   log_info "Backup completed successfully: ${DEST_PATH}" >> "${MC_LOG}/backup.log"
 else
-  log_error "tar failed to create the backup archive." >> "${MC_LOG}/backup.log"
+  log_error "tar failed to create the backup archive." |tee -a "${MC_LOG}/backup.log"
   exit 1
 fi
 
-log_header "Backup script finished." >> "${MC_LOG}/backup.log"
+log_success "Backup script finished." | tee -a "${MC_LOG}/backup.log"
+${MC_HOME}/bin/mcrcon -H localhost -p clamp-navel-orange-time -w 2 "say backup script complete!"
+
 
 # Optional: You might consider adding a cleanup step here to remove archives older than X days/weeks
 # in the destination directory to prevent the backup directory from filling up completely.

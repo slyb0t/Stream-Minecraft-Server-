@@ -1,6 +1,7 @@
 **/workspace/*
 
-plugins/DiscordSRV/config.yml
+**/plugins/DiscordSRV/config.yml
+**/plugins/.paper-remapped/
 
 .profile
 .selected_editor
