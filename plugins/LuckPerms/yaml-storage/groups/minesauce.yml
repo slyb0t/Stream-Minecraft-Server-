@@ -5,4 +5,4 @@ permissions:
     context:
       server: world
 parents:
-- mod
+- default
