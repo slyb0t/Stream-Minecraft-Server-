@@ -75,7 +75,7 @@ BACKUP_FILENAME="${MC_USER}-mc-${TODAY}.tar.xz"
 DEST_PATH="${DEST_DIR}/${BACKUP_FILENAME}"
 
 log_header "Starting backup for ${MC_USER} worlds to ${DEST_DIR}" >> "${MC_LOG}/backup.log"
-${MC_HOME}/bin/mcrcon -H localhost -p clamp-navel-orange-time -w 2 "say Starting world backup. Please be patient"
+# ${MC_HOME}/bin/mcrcon -H localhost -p clamp-navel-orange-time -w 2 "say Starting world backup. Please be patient"
 
 # Create backup directory if it doesn't exist
 if [ ! -d "${DEST_DIR}" ]; then
@@ -98,7 +98,7 @@ else
 fi
 
 log_success "Backup script finished." | tee -a "${MC_LOG}/backup.log"
-${MC_HOME}/bin/mcrcon -H localhost -p clamp-navel-orange-time -w 2 "say backup script complete!"
+# ${MC_HOME}/bin/mcrcon -H localhost -p clamp-navel-orange-time -w 2 "say backup script complete!"
 
 
 # Optional: You might consider adding a cleanup step here to remove archives older than X days/weeks
